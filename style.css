@@ -59,7 +59,7 @@ body{
 /* banner section coding end */
 #achievement-section, #online-course-section, #testomonial-section{
     width: 100%;
-    background-color: #fbfbfb;
+    background-color: #f7f7f7;
 }
 #achievement-section{
     padding: 45px 0px;
@@ -131,6 +131,9 @@ small img{
     padding: 20px 10px 15px 0px;
 }
 /* online section coding end */
+#testomonial-section{
+    height: 450px;
+}
 #testomonial-section h2{
     margin-top: 100px;
 }
@@ -147,7 +150,6 @@ small img{
 #footer{
     width: 100%;
     background-color:#282531;
-    margin-top: 100px;
     padding: 50px 0px;
 }
 #footer li, p{
@@ -162,3 +164,55 @@ small img{
     margin-top: 30px;
 }
 /* footer section coding end */
+
+
+/* responsive css */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    #banner-section {
+        height: 135vh;
+    }
+    .text-center{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .card-deck .card {
+        flex: 1 0 50%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #footer li, p {
+        text-align: center;   
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+#banner-section p {
+    margin-top: 50px;
+}
+#banner-section {
+    height: 435px;
+}   
+.card-deck .card{
+    flex: 1 0 40%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.card-deck .card-box{
+    flex: 1 0 50%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+.card-deck .card {
+    flex: 1 0 20%;
+}
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
