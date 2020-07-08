@@ -25,6 +25,12 @@ body{
     border-radius: 33px;
     padding: 12px 28px;
     color: #FFF;
+    transition: 0.3s all ease;
+}
+.website-button:hover{
+    color: #252525;
+    background: transparent;
+    border: 1px solid lightgreen;
 }
 /* header section coding end */
 #banner-section{
@@ -41,7 +47,7 @@ body{
 #banner-section img{
     width: 100%;
 }
-#banner-section span{
+.heading-color{
     color: #21B573;
 }
 .nav-link{
@@ -57,7 +63,7 @@ body{
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 /* banner section coding end */
-#achievement-section, #online-course-section, #testomonial-section{
+#achievement-section, #online-course-section, #testomonial-section, {
     width: 100%;
     background-color: #f7f7f7;
 }
@@ -147,6 +153,25 @@ small img{
     margin-top: 25px;
 }
 /* testomonial section coding end */
+#latest-news-section{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #F0FFF0;
+}
+#latest-news-section .card-box{
+    border-radius: 10px;
+    transition: 0.3s all ease;
+}
+#latest-news-section .card-box:hover img {
+    transform: scale(.9);
+}
+p.text-muted {
+    text-align: justify;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 5px 0px 0px 0px;
+}
+/* latest-news section coding end */
 #footer{
     width: 100%;
     background-color:#282531;
@@ -165,26 +190,24 @@ small img{
 }
 /* footer section coding end */
 
-
 /* responsive css */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
-    #banner-section {
-        height: 135vh;
-    }
-    .text-center{
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    
-    .card-deck .card {
-        flex: 1 0 50%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    #footer li, p {
-        text-align: center;   
-    }
+#banner-section {
+    height: 135vh;
+}
+.text-center{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card-deck .card {
+    flex: 1 0 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#footer li, p {
+    text-align: center;   
+}
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -203,7 +226,7 @@ small img{
 .card-deck .card-box{
     flex: 1 0 50%;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 }
 /* Large devices (desktops, 992px and up) */
